@@ -9,7 +9,7 @@ namespace MyExercise
         {
             Services services = new Services();
 
-            List<int> numbers = new List<int> { 2, 3, 4, 5, 6, 23 };
+            List<int> numbers = new List<int> { 2, 3, 4, 55, 6, 23 };
 
             string[] names = new string[] { "Gocha", "Gio", "Levani" };
 
@@ -17,7 +17,9 @@ namespace MyExercise
 
             List<int> list = services.RemoveFromList(numbers, 23); //Test Remove Element from List
 
-            services.Writer(list);
+            services.WriterItems(list);
+
+            services.WriterItem(services.FindFromList(numbers, 55));
 
             
 
